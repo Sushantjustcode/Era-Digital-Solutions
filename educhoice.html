@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Programs</title>
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #00b4db, #0083b0);
+            --kids-gradient: linear-gradient(45deg, #FF6B6B, #FF8E8E);
+            --steam-gradient: linear-gradient(45deg, #4CAF50, #8BC34A);
+            --spacing-base: clamp(1rem, 2vw, 2rem);
+            --container-width: min(100% - 2rem, 1200px);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary-gradient);
+            padding: var(--spacing-base);
+        }
+
+        .container {
+            text-align: center;
+            padding: var(--spacing-base);
+            width: var(--container-width);
+            margin-inline: auto;
+        }
+
+        h1 {
+            color: white;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            line-height: 1.2;
+        }
+
+        .button-container {
+            display: flex;
+            gap: clamp(1rem, 3vw, 2rem);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-base);
+        }
+
+        .button {
+            padding: clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 3vw, 2.5rem);
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            border: none;
+            border-radius: clamp(10px, 2vw, 15px);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            width: clamp(200px, 100%, 300px);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .kids-academy {
+            background: var(--kids-gradient);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .steamboat {
+            background: var(--steam-gradient);
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        @media (hover: hover) {
+            .button:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            }
+
+            .button:hover::before {
+                left: 100%;
+            }
+        }
+
+        @media (hover: none) {
+            .button:active {
+                transform: scale(0.98);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .button {
+                transition: none;
+            }
+
+            .button::before {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --spacing-base: 1rem;
+            }
+        }
+
+        @supports not (min-height: 100dvh) {
+            body {
+                min-height: -webkit-fill-available;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Educational Programs</h1>
+        <div class="button-container">
+            <a href="littleboat.html" class="button kids-academy">
+                🎨 My Little Boat Kids Academy
+            </a>
+            <a href="steamboat.html" class="button steamboat">
+                🚢 Steamboat Program
+            </a>
+        </div>
+    </div>
+</body>
+</html>
