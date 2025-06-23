@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Era Digital Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url(logo/a-digital-illustration-of-a-sleek-logo-f_13CltGMZQFuOXkhXeAh_6A_75KqlZXVTL2RuSUpy3-vfQ.jpeg);
+            background-repeat: none;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/5113826.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:active {
+            transform: translateY(1px);
+        }
+
+        .education {
+            background: linear-gradient(45deg, #4CAF50, #8BC34A);
+            color: white;
+        }
+
+        .services {
+            background: linear-gradient(45deg, #2196F3, #03A9F4);
+            color: white;
+        }
+
+        .emu {
+            background: linear-gradient(45deg, #f44336, #FF5722);
+            color: white;
+        }
+
+        .gallery {
+            background: linear-gradient(45deg, #9C27B0, #E91E63);
+            color: white;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .button:hover::before {
+            left: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                padding: 0 20px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>  
+    <div class="hero">
+        <h1>Welcome to Era digital solutions World</h1>
+        <p>Explore Our journey through Manufacturing, education, services and more</p>
+        <div class="button-container">
+            <a href="educhoice.html" class="button education">Education</a>
+            <a href="service.html" class="button services">Services</a>
+            <a href="manufacturing.html" class="button emu">Manufacturing</a>
+            <a href="gallery.html" class="button gallery">Our Products</a>
+        </div>
+    </div>
+</body>
+</html>

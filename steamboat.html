@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steamboat Academy</title>
+    <link rel="stylesheet" href="steamboat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="logo/Steamboat_logo_1-removebg-preview.png" alt="logo" width="100">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Excellence in Education</h1>
+            <p>Preparing Students for Success in all Grades</p>
+            <div class="cta-buttons">
+                <a href="#programs" class="cta-button primary">Explore Programs</a>
+                <a href="#contact" class="cta-button secondary">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <h2>Academic Programs</h2>
+        <div class="program-grid">
+            <div class="program-card">
+                <div class="program-icon">🔬</div>
+                <h3>Science Stream</h3>
+                <p>Physics, Chemistry, Biology, Mathematics</p>
+                <ul>
+                    <li>Advanced Lab Facilities</li>
+                    <li>Experienced Faculty</li>
+                    <li>Practical Approach</li>
+                </ul>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">💻</div>
+                <h3>Commerce Stream</h3>
+                <p>Accounts, Business Studies, Economics</p>
+                <ul>
+                    <li>Industry Exposure</li>
+                    <li>Case Study Based Learning</li>
+                    <li>Financial Literacy</li>
+                </ul>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">📚</div>
+                <h3>Humanities</h3>
+                <p>History, Political Science, Literature</p>
+                <ul>
+                    <li>Critical Thinking</li>
+                    <li>Research Projects</li>
+                    <li>Creative Expression</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="facilities">
+        <h2>Our Facilities</h2>
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <h3>Smart Classrooms</h3>
+                <p>Interactive learning with modern technology</p>
+            </div>
+            <div class="facility-card">
+                <h3>Digital Library</h3>
+                <p>Extensive collection of digital resources</p>
+            </div>
+            <!-- <div class="facility-card">
+                <h3>Sports Complex</h3>
+                <p>Indoor and outdoor sports facilities</p>
+            </div> -->
+            <div class="facility-card">
+                <h3>Interactive classes</h3>
+                <p>Study with practicality</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <h2>Our Achievements</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>95%</h3>
+                <p>Board Results</p>
+            </div>
+            <div class="stat-card">
+                <h3>80+</h3>
+                <p>Faculty Members</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>College Placement</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Connect With Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                
+                <h3>Contact Information</h3>
+                <p>📍 Address: street no: 3,Behind Madhuban Police Complex</p>
+                <p>Sirsi,Karnal</p>
+                <p>📞 +91 9050835685</p>
+                <p>📞 +91 9812915999</p>
+                <p>✉️ admissions@steamboat.edu</p>
+                <p>⏰ Mon-Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <select required>
+                    <option value="">Select Program</option>
+                    <option value="science">Science</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="humanities">Humanities</option>
+                </select>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Steamboat Academy. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2a5298;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(30,60,114,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 2rem 1rem;
+            }
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+            color: white;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-info, .contact-form {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-info h2, .contact-form h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-info i {
+            font-size: 1.5rem;
+        }
+
+        /* .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        } */
+
+        .submit-btn {
+            background: white;
+            color: #1e3c72;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 2rem 1rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manufacturing & Development Services</h1>
+        <p>Custom Solutions for Your Business Needs</p>
+    </header>
+
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Custom Software Development</h3>
+                <p>Tailored software solutions designed to meet your specific business requirements. From web applications to mobile apps, we deliver high-quality software on demand.</p>
+                <a href="https://www.google.com/search?q=custom+software+development+services" target="_blank" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Printing Solutions</h3>
+                <p>We can repair or make custom printers </p>
+                <a href="https://www.google.com/search?q=custom+printer+repair+and+manufacturing+services" target="_blank" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Mobile App Development</h3>
+                <p>Native and cross-platform mobile applications built with the latest technologies to ensure optimal performance and user experience.</p>
+                <a href="https://www.google.com/search?q=mobile+app+development+services" target="_blank" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>Responsive and dynamic websites built using modern frameworks and technologies. From simple landing pages to complex web applications.</p>
+                <a href="https://www.google.com/search?q=professional+web+development+services" target="_blank" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>IoT Solutions</h3>
+                <p>Connected device solutions and IoT implementations for smart manufacturing and industrial applications.</p>
+                <a href="https://www.google.com/search?q=industrial+IoT+solutions+and+services" target="_blank" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>making and Repairing of POS machine </h3>
+                <p>Expert guidance on technology implementation, process optimization, and digital transformation strategies.</p>
+                <a href="https://www.google.com/search?q=POS+machine+repair+and+manufacturing+services" target="_blank" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- convey belt , weighing machine  -->
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>📍 street no: 3,Behind Madhuban Police Complex,Karnal, India</p>
+                <p>📞 +91 9050835685</p>
+                <p>📞 +91 9812915999</p>
+                <p>⏰ Monday - Friday: 9:00 AM - 8:00 PM</p>
+                <p>🌐 Follow us on social media:</p>
+                <div class="social-links">
+                    rinku
+                </div>
+            </div>
+            <!-- <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div> -->
+        </div>
+    </section>
+</body>
+</html>
